@@ -6,4 +6,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SpringJdbcIngredientRepo extends CrudRepository<Ingredient, String> {
+    Iterable<Ingredient> findByName(String name);
+
+    Iterable<Ingredient> findByNameContains(String name);
+
+    Iterable<Ingredient> findByType(Ingredient.Type type);
+
+
 }

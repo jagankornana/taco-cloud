@@ -39,6 +39,24 @@ public class IngredientController {
         return ingredientService.getIngredientById(id);
     }
 
+    @GetMapping("/name")
+    public Iterable<Ingredient> getIngredientsByName(@RequestParam("name") String name) {
+        log.info("getIngredientsByName: {}", name);
+        return ingredientService.getIngredientsByName(name);
+    }
+
+    @GetMapping("/nameContains")
+    public Iterable<Ingredient> getIngredientsByNameContains(@RequestParam("name") String name) {
+        log.info("getIngredientsByNameContains: {}", name);
+        return ingredientService.getIngredientsByNameContains(name);
+    }
+
+    @GetMapping("/type")
+    public Iterable<Ingredient> getIngredientsByType(@RequestParam("type") Ingredient.Type type) {
+        log.info("getIngredientsByType: {}", type);
+        return ingredientService.getIngredientsByType(type);
+    }
+
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Ingredient> saveIngredient(@Valid @RequestBody Ingredient ingredient) {
         log.info("saveIngredient: {}", ingredient);

@@ -10,7 +10,14 @@ public interface IngredientService {
 
     Optional<Ingredient> getIngredientById(String id);
 
+    Iterable<Ingredient> getIngredientsByName(String name);
+
+    Iterable<Ingredient> getIngredientsByNameContains(String name);
+
+    Iterable<Ingredient> getIngredientsByType(Ingredient.Type type);
+
     Ingredient saveIngredient(Ingredient ingredient);
 
     void deleteIngredientById(String id);
+
 }

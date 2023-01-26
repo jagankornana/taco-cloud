@@ -29,6 +29,21 @@ public class IngredientServiceImpl implements IngredientService {
     }
 
     @Override
+    public Iterable<Ingredient> getIngredientsByName(String name) {
+        return ingredientRepo.findByName(name);
+    }
+
+    @Override
+    public Iterable<Ingredient> getIngredientsByNameContains(String name) {
+        return ingredientRepo.findByNameContains(name);
+    }
+
+    @Override
+    public Iterable<Ingredient> getIngredientsByType(Ingredient.Type type) {
+        return ingredientRepo.findByType(type);
+    }
+
+    @Override
     public Ingredient saveIngredient(Ingredient ingredient) {
         return ingredientRepo.save(ingredient);
     }
