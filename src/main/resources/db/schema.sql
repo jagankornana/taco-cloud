@@ -1,5 +1,5 @@
 create table if not exists Taco_Order (
-    id identity,
+    id integer not null auto_increment,
     amount decimal not null,
     address varchar(100) not null,
     placed_at timestamp not null,
@@ -7,7 +7,7 @@ create table if not exists Taco_Order (
 );
 
 create table if not exists Taco (
-    id identity,
+    id integer not null auto_increment,
     name varchar(50) not null,
     taco_order integer not null,
     taco_order_key integer not null,
