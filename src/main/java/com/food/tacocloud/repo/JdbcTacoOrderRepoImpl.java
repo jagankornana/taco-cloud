@@ -1,8 +1,8 @@
 package com.food.tacocloud.repo;
 
-import com.food.tacocloud.model.jdbc.IngredientRef;
-import com.food.tacocloud.model.jdbc.Taco;
-import com.food.tacocloud.model.jdbc.TacoOrder;
+import com.food.tacocloud.domain.IngredientRef;
+import com.food.tacocloud.domain.Taco;
+import com.food.tacocloud.domain.TacoOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.PreparedStatementCreator;

@@ -1,14 +1,14 @@
 package com.food.tacocloud.config;
 
-import static com.food.tacocloud.model.jdbc.Ingredient.Type;
+import static com.food.tacocloud.domain.Ingredient.Type;
 
-import com.food.tacocloud.model.jdbc.Ingredient;
+import com.food.tacocloud.domain.Ingredient;
 import com.food.tacocloud.repo.SpringJdbcIngredientRepo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class PreloadData {
+public class DataLoaderConfig {
 
     //    @Bean
     public CommandLineRunner dataLoader(SpringJdbcIngredientRepo ingredientRepo) {

@@ -1,6 +1,6 @@
 package com.food.tacocloud.repo;
 
-import com.food.tacocloud.model.jdbc.Ingredient;
+import com.food.tacocloud.domain.Ingredient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

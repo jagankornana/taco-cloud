@@ -1,6 +1,6 @@
 package com.food.tacocloud.service;
 
-import com.food.tacocloud.model.jdbc.TacoOrder;
+import com.food.tacocloud.domain.TacoOrder;
 import com.food.tacocloud.repo.SpringJdbcTacoOrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.food.tacocloud.repo;
 
-import com.food.tacocloud.model.jdbc.TacoOrder;
+import com.food.tacocloud.domain.TacoOrder;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

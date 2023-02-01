@@ -1,4 +1,4 @@
-package com.food.tacocloud.model.jdbc;
+package com.food.tacocloud.domain;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

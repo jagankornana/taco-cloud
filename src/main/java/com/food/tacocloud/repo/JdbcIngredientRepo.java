@@ -1,6 +1,6 @@
 package com.food.tacocloud.repo;
 
-import com.food.tacocloud.model.jdbc.Ingredient;
+import com.food.tacocloud.domain.Ingredient;
 
 import java.util.List;
 import java.util.Optional;

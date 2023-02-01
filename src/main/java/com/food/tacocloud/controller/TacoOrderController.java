@@ -1,6 +1,6 @@
 package com.food.tacocloud.controller;
 
-import com.food.tacocloud.model.jdbc.TacoOrder;
+import com.food.tacocloud.domain.TacoOrder;
 import com.food.tacocloud.service.TacoOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
