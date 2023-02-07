@@ -11,6 +11,4 @@ public interface SpringJdbcIngredientRepo extends CrudRepository<Ingredient, Str
     Iterable<Ingredient> findByNameContains(String name);
 
     Iterable<Ingredient> findByType(Ingredient.Type type);
-
-
 }
